@@ -17,7 +17,7 @@
 # under the License.
 #
 
-include_recipe 'varnishd::build'
+include_recipe 'chef-varnishd::build'
 include_recipe 'git'
 
 directory node[:varnishd][:runtime][:vmod_dir] do
