@@ -17,8 +17,8 @@
 # under the License.
 #
 
-include_recipe 'varnishd::build'
-include_recipe 'varnishd::vmods'
+include_recipe 'chef-varnishd::build'
+include_recipe 'chef-varnishd::vmods'
 
 user node[:varnishd][:runtime][:user] do
   system true
